@@ -2,3 +2,4 @@ theme: minima
 title: swl的博客网站
 author: swl
 description: xxx
+permalink: /:categories/:title/
