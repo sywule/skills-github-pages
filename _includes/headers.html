@@ -1,0 +1,7 @@
+<ul>
+  {% for category in site.categories %}
+    <li>
+      <a href="/categories/{{ category | first | slugify }}">{{ category | first }}</a>
+    </li>
+  {% endfor %}
+</ul>
