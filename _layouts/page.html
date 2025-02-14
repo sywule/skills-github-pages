@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css"> <!-- 替换为你的CSS文件路径 -->
+</head>
+<body>
+    <header>
+        <h1>{{ site.title }}</h1> <!-- 站点标题，通常定义在_config.yml中 -->
+        <nav>
+            <ul>
+                <!-- 这里可以添加你的导航链接，例如首页、关于页面等 -->
+                <li><a href="{{ site.baseurl }}/">Home</a></li>
+                <li><a href="{{ site.baseurl }}/about">About</a></li>
+                <!-- 可以添加更多链接 -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{ content }} <!-- 这个标签将被分类页面的具体内容替换 -->
+    </main>
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p> <!-- 站点版权信息，通常定义在_config.yml中 -->
+    </footer>
+    <script src="{{ site.baseurl }}/js/scripts.js"></script> <!-- 替换为你的JavaScript文件路径 -->
+</body>
+</html>
